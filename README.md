@@ -33,25 +33,7 @@ by [Addy Osmani](http://addyosmani.com/resources/essentialjsdesignpatterns/book/
 Usage
 -----
 
-### Using in Node
-
-The package is in NPM as `mediator-js`. Include it in your project like so:
-
-```javascript
-var Mediator = require("mediator-js").Mediator,
-    mediator = new Mediator();
-
-mediator.subscribe("wat", function(){ console.log(arguments); });
-mediator.publish("wat", 7, "hi", { one: 1 });
-```
-
 ### Using in the Browser
-
-Mediator.js is compatible with browser module-loading solutions, including but
-not limited to Browserify, Almond.js, Require.js, and others.
-
-__Note__: if using AMD / Almond module loading, use the NPM package name:
-`require("mediator-js").Mediator`
 
 ```html
 <script src="/js/Mediator.min.js"></script>
